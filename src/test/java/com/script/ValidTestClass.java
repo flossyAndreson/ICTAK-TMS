@@ -1,6 +1,7 @@
 package com.script;
 
 import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -62,11 +63,19 @@ public class ValidTestClass extends TestBase{
 		   String actualurl5 =driver.getCurrentUrl();
 		   Assert.assertEquals(expectedurl5,actualurl5);
 		   Thread.sleep(4000);
+		   
+			}
 		    
 		   
 		   
 		   
 		   ////
+		   
+		   
+		   
+
+			@Test(priority=2)
+		    public void verifyHomepage() throws IOException, InterruptedException {
 		   
 		   objapprove=new Approve1(driver);
 		    boolean actualResult1 =objapprove.ApproveAssertion();
@@ -93,29 +102,37 @@ public class ValidTestClass extends TestBase{
 		   
 		    boolean actualResult3 =objalloc.AllocAssertion();
 		    Assert.assertEquals(actualResult3, true);
-		    objalloc.clickAllocate();
-		    Thread.sleep(4000);
+		    
 		    
 		    
 //////
-		    objLoginM=new LoginandVerifyAllTrPage(driver);
-		    objLoginM.clickCourseid();
-		    
-		    objLoginM.clickBatchid();
-		    
-		    
-		    objLoginM.clickTime();
-		    
-		    objLoginM.clickStartDate();
-		    objLoginM.clickEndDate();
-		    objLoginM.clickVenue();
-		    Thread.sleep(4000);
 		    
 			}
 		    
-		    @Test(priority=2)
+		    @Test(priority=3)
 		    public void verifyAllocateTrainer() throws InterruptedException, IOException{
 		  //Create Allocate Trainer Page object
+		    	
+		    	
+		    	
+		    	objalloc=new Allocate1(driver);
+		    	objalloc.clickAllocate();
+			    Thread.sleep(4000);
+			    
+		    	objLoginM=new LoginandVerifyAllTrPage(driver);
+			    objLoginM.clickCourseid();
+			    
+			    objLoginM.clickBatchid();
+			    
+			    
+			    objLoginM.clickTime();
+			    
+			    objLoginM.clickStartDate();
+			    objLoginM.clickEndDate();
+			    objLoginM.clickVenue();
+			    Thread.sleep(4000);
+			    
+			    
 		    objAllocateTr = new AllocateTrainerPage(driver);
 		    
 		    objAllocateTr.scrollUpPage();
@@ -155,6 +172,7 @@ public class ValidTestClass extends TestBase{
 		    objAllocateTr.setEMonth(emonth);
 		    objAllocateTr.setEDay(eday);
 		    objAllocateTr.setEYear(eyear);
+		    Thread.sleep(4000);
 		    
 		    
 		    
@@ -172,15 +190,12 @@ public class ValidTestClass extends TestBase{
 		    
 		    }
 		    
-		    @Test(priority=3)
+		    @Test(priority=4)
 		    public void viewallocatedTrainer() throws InterruptedException, IOException{
 		   
-		    
 		   objview = new ViewAlloc(driver);
 		   objview.clickviewalloc();
-		   Thread.sleep(4000);
-		   driver.navigate().refresh();
-			Thread.sleep(4000);
+		  
 		   String expectedurl1 =Trainermngmtconstants.url1;
 		   String actualurl1 =driver.getCurrentUrl();
 		   Assert.assertEquals(expectedurl1,actualurl1);
@@ -197,13 +212,9 @@ public class ValidTestClass extends TestBase{
 		   String actualurl2 =driver.getCurrentUrl();
 		   Assert.assertEquals(expectedurl2,actualurl2);
 		
+		   
 		    
-		    
-		    
-		    
-		    
-			
-			
+		  	
 		
 }
 }

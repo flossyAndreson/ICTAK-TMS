@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128736" started-at="2022-03-20T19:40:37 IST" finished-at="2022-03-20T19:42:46 IST">
+  <suite name="Default suite" duration-ms="90580" started-at="2022-03-21T10:46:03 IST" finished-at="2022-03-21T10:47:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128736" started-at="2022-03-20T19:40:37 IST" finished-at="2022-03-20T19:42:46 IST">
+    <test name="Default test" duration-ms="90580" started-at="2022-03-21T10:46:03 IST" finished-at="2022-03-21T10:47:33 IST">
       <class name="com.script.ValidTestClass">
-        <test-method status="PASS" signature="onSetup()[pri:0, instance:com.script.ValidTestClass@2a70a3d8]" name="onSetup" is-config="true" duration-ms="27522" started-at="2022-03-20T19:40:37 IST" finished-at="2022-03-20T19:41:05 IST">
+        <test-method status="PASS" signature="onSetup()[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="onSetup" is-config="true" duration-ms="44378" started-at="2022-03-21T10:46:03 IST" finished-at="2022-03-21T10:46:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onSetup -->
-        <test-method status="FAIL" signature="verifyAdminValidLogin()[pri:1, instance:com.script.ValidTestClass@2a70a3d8]" name="verifyAdminValidLogin" duration-ms="41831" started-at="2022-03-20T19:41:05 IST" finished-at="2022-03-20T19:41:47 IST">
+        <test-method status="PASS" signature="verifyAdminValidLogin()[pri:1, instance:com.script.ValidTestClass@289d1c02]" name="verifyAdminValidLogin" duration-ms="13386" started-at="2022-03-21T10:46:47 IST" finished-at="2022-03-21T10:47:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminValidLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="tearDown" is-config="true" duration-ms="3" started-at="2022-03-21T10:47:01 IST" finished-at="2022-03-21T10:47:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminValidLogin status=SUCCESS method=ValidTestClass.verifyAdminValidLogin()[pri:1, instance:com.script.ValidTestClass@289d1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyHomepage()[pri:2, instance:com.script.ValidTestClass@289d1c02]" name="verifyHomepage" duration-ms="12557" started-at="2022-03-21T10:47:01 IST" finished-at="2022-03-21T10:47:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-03-21T10:47:13 IST" finished-at="2022-03-21T10:47:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepage status=SUCCESS method=ValidTestClass.verifyHomepage()[pri:2, instance:com.script.ValidTestClass@289d1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyAllocateTrainer()[pri:3, instance:com.script.ValidTestClass@289d1c02]" name="verifyAllocateTrainer" duration-ms="5917" started-at="2022-03-21T10:47:13 IST" finished-at="2022-03-21T10:47:19 IST">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element is not clickable at point (768, 760)
@@ -19,8 +49,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-T03VUTLP', ip: '192.168.43.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\ARUNMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: df9aa01cb5390c423ebca5a984d634a4]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\ARUNMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 67ee1b6ee73827b9a2bea393f4069674]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (768, 760)
@@ -28,8 +58,8 @@ Session ID: df9aa01cb5390c423ebca5a984d634a4]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-T03VUTLP', ip: '192.168.43.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\ARUNMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: df9aa01cb5390c423ebca5a984d634a4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\ARUNMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 67ee1b6ee73827b9a2bea393f4069674
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -47,9 +77,9 @@ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
 at com.TrainermanagementPages.LoginandVerifyAllTrPage.clickVenue(LoginandVerifyAllTrPage.java:106)
-at com.script.ValidTestClass.verifyAdminValidLogin(ValidTestClass.java:111)
+at com.script.ValidTestClass.verifyAllocateTrainer(ValidTestClass.java:140)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,16 +113,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminValidLogin -->
-        <test-method status="PASS" signature="verifyAllocateTrainer()[pri:2, instance:com.script.ValidTestClass@2a70a3d8]" name="verifyAllocateTrainer" duration-ms="38049" started-at="2022-03-20T19:41:47 IST" finished-at="2022-03-20T19:42:25 IST">
+        </test-method> <!-- verifyAllocateTrainer -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="tearDown" is-config="true" duration-ms="1063" started-at="2022-03-21T10:47:19 IST" finished-at="2022-03-21T10:47:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllocateTrainer status=FAILURE method=ValidTestClass.verifyAllocateTrainer()[pri:3, instance:com.script.ValidTestClass@289d1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllocateTrainer -->
-        <test-method status="PASS" signature="viewallocatedTrainer()[pri:3, instance:com.script.ValidTestClass@2a70a3d8]" name="viewallocatedTrainer" duration-ms="19938" started-at="2022-03-20T19:42:25 IST" finished-at="2022-03-20T19:42:45 IST">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="viewallocatedTrainer()[pri:4, instance:com.script.ValidTestClass@289d1c02]" name="viewallocatedTrainer" duration-ms="8279" started-at="2022-03-21T10:47:20 IST" finished-at="2022-03-21T10:47:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewallocatedTrainer -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.script.ValidTestClass@2a70a3d8]" name="quitBrowser" is-config="true" duration-ms="1335" started-at="2022-03-20T19:42:45 IST" finished-at="2022-03-20T19:42:46 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-03-21T10:47:28 IST" finished-at="2022-03-21T10:47:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewallocatedTrainer status=SUCCESS method=ValidTestClass.viewallocatedTrainer()[pri:4, instance:com.script.ValidTestClass@289d1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.script.ValidTestClass@289d1c02]" name="quitBrowser" is-config="true" duration-ms="4936" started-at="2022-03-21T10:47:28 IST" finished-at="2022-03-21T10:47:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

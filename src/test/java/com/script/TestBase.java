@@ -1,12 +1,21 @@
 package com.script;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 public class TestBase {
@@ -43,6 +52,30 @@ public class TestBase {
 	    driver.get(prop.getProperty("url"));
 	    driver.manage().window().maximize();   
 	}
+	 
+	 
+	 @AfterMethod
+	 public void tearDown(ITestResult iTestResult) throws IOException {
+	     if (ITestResult.FAILURE == iTestResult.getStatus()) {
+	         takeScreenshot(iTestResult.getName());
+	     }
+	 }
+	 public String takeScreenshot(String name) throws IOException {
+	 	/*Step 1) Convert web driver object to TakesScreenshot
+	     Step 2) Call getScreenshotAs method to create image file
+	     Step 3) Copy file to Desired Location*/
+	 	
+	 	String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	     //Take the screenshot
+	 	File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	   
+	 	String destination =  System.getProperty("user.dir") + "/target/" + name + dateName
+	           + ".png";
+	  
+	 	File finalDestination = new File(destination);
+	 	FileUtils.copyFile(source, finalDestination);
+	 	return destination;   
+	 }
 	
 	@AfterTest
 	public void quitBrowser() throws IOException {

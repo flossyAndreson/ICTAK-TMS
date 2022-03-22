@@ -5,8 +5,9 @@
     <classes>
       <class name="com.script.ValidTestClass">
         <methods>
+          <include name="tearDown"/>
           <include name="quitBrowser"/>
-          <include name="verifyAdminValidLogin"/>
+          <include name="verifyAllocateTrainer"/>
           <include name="onSetup"/>
         </methods>
       </class> <!-- com.script.ValidTestClass -->
