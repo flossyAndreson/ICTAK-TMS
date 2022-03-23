@@ -203,6 +203,11 @@ public class ValidTestClass extends TestBase{
 		  objview.clicksearch();
 		  Thread.sleep(4000);
 
+		  
+		  ////Logout
+		  
+		  
+		  
 		   objadlogout = new Adminlogout(driver);
 		   objadlogout.clicklogout();
 		   Thread.sleep(4000);

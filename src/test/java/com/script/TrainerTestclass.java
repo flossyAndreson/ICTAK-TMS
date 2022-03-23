@@ -50,7 +50,7 @@ public class TrainerTestclass extends TestBase{
 	Assert.assertEquals(expectedurl2,actualurl2);
 	Thread.sleep(4000);
 
-
+////My Allocation Details
 
 	objmyalloc= new MyAllocDetails(driver);
 	objmyalloc.clickmyalloc();
@@ -62,6 +62,9 @@ public class TrainerTestclass extends TestBase{
 	String expectedurl3 =Trainermngmtconstants.url3;
 	String actualurl3 =driver.getCurrentUrl();
 	Assert.assertEquals(expectedurl3,actualurl3);
+	
+	
+////Logout
 
 
 	objtrainlogout=new Trainerlogout(driver);
